@@ -34,3 +34,26 @@ log(booleanValue); // true (non-empty string is truthy)
 let someNumber = 33
 let StringNumber = String(someNumber);
 console.log(StringNumber); // "33" (number is converted to string)
+
+
+// *****************operations******************
+let val = 3;
+let negval = -val;
+console.log(negval); // -3 (negation of 3)
+
+let str1 = "hello";
+let str2 = "world";
+let str3 = str1 + " " + str2;
+console.log(str3); // "hello world" (string concatenation)
+
+console.log("1" + 2); // "12" (string concatenation, number 2 is converted to string)
+console.log(1 + 2 + "2"); // "32" (1 + 2 is evaluated first, resulting in 3, then concatenated with "2")
+
+console.log(+true); // 1 (true is converted to number 1)
+
+let num1, num2, num3;
+num1 = num2 = num3 = 10;
+
+let gameScore = 100;
+gameScore++;
+console.log(gameScore); // 101 (postfix increment, gameScore is incremented by 1)
